@@ -271,6 +271,10 @@ jobs:
           #curl url_to_github_commit.patch | git apply --directory=LoopKit -v --whitespace=fix
 
           # Submodule xxxxx patches:
+          
+          # Loop: LoopLoopConstants.swift: changed line 53 value to 1.0 from 0.4
+          curl https://github.com/sjameswood/Loop/commit/0ecc31de0c1358b5867c2ea2e5876bb687fe6704.patch | git apply -v --directory=Loop
+
 
           # Add patches for customization of additional submodules by following the templates above, 
           # and make sure to specify the submodule by setting "--directory=(submodule_name)".
